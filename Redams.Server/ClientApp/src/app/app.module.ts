@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
+import { ProjectModule } from './Project/project.module'
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
-    FormsModule,
+    FormsModule, ProjectModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' }
     
