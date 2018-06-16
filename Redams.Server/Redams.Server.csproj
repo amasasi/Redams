@@ -13,8 +13,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CSLA-Core-NS" Version="4.7.200-R18051402" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Realm.Database" Version="3.0.0" />
+    <PackageReference Include="Syncfusion.XlsIO.NETStandard" Version="16.1.0.37" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +35,11 @@
     <None Remove="ClientApp\src\app\Project\project-routing.module.ts" />
     <None Remove="ClientApp\src\app\Project\project.component.ts" />
     <None Remove="ClientApp\src\app\Project\project.module.ts" />
+    <None Remove="ClientApp\src\app\shared\redams.model.type.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Redams.Common.Model\Redams.Common.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +50,7 @@
     <TypeScriptCompile Include="ClientApp\src\app\Project\project-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Project\project.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Project\project.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\redams.model.type.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
