@@ -18,7 +18,7 @@ namespace Redams.Server.Models.Realm.Base
 
             var path = Path.Combine(
                     Directory.GetCurrentDirectory(),
-                    "MainDatabase", "MainDb.realm");
+                    "Data", "MainDb.realm");
             var conf = new Common.Model.SafeRealmConfiguration(path);
 
 

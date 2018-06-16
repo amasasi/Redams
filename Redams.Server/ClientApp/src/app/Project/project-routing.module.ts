@@ -7,7 +7,7 @@ import { NewProjectComponent } from './new-project/new-project.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const projectsRoutes: Routes = [
   {
-    path: 'project',
+    path: 'projectdetail/:ProjectID',
     component: ProjectComponent
     
   },

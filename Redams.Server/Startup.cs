@@ -22,8 +22,13 @@ namespace Redams.Server
         {
 
             services.AddScoped<Models.Realm.IMainDbRealmDatabaseService, Models.Realm.Base.MainDbRealmDatabaseService>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+           
+            services.AddMvc().AddJsonOptions(opt =>
+            {
 
+                opt.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+
+            }).AddControllersAsServices().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

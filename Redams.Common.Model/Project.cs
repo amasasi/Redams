@@ -11,6 +11,7 @@ namespace Redams.Common.Model
         public string ID { get; set; }
 
        public string ProjectName { get; set; }
+        public string ShortName { get; set; }
 
         public IList<Form> Forms { get; }
        

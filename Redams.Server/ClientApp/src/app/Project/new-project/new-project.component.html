@@ -23,19 +23,19 @@
           <label for="email_address">Project Name</label>
           <div class="form-group">
             <div class="form-line">
-              <input type="text" id="email_address" class="form-control" placeholder="Enter name of the project">
+              <input type="text" id="email_address" class="form-control"   [(ngModel)]="project.ProjectName" placeholder="Enter name of the project"  [ngModelOptions]="{standalone: true}">
             </div>
           </div>
           <label for="password">Short Name</label>
           <div class="form-group">
             <div class="form-line">
-              <input type="text" id="password" class="form-control" placeholder="Enter project Short Name">
+              <input type="text" id="password" class="form-control"  [(ngModel)]="project.ShortName" placeholder="Enter project Short Name"  [ngModelOptions]="{standalone: true}">
             </div>
           </div>
 
           <div class="form-group">
             <div class="form-line">
-              <a  class="btn btn-primary m-t-15 waves-effect" routerLink="/project">Create</a>
+              <button class="btn btn-primary m-t-15 waves-effect" (click)="CreateProject()">Create</button> 
               
               <a  class="btn btn-primary m-t-15 waves-effect">Cancel</a>
             </div>
