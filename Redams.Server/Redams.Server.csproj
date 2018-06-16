@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\home\home-routing.module.ts" />
+    <None Remove="ClientApp\src\app\home\home.module.ts" />
+    <None Remove="ClientApp\src\app\home\homechild.component.ts" />
     <None Remove="ClientApp\src\app\Project\new-project\new-project.component.ts" />
     <None Remove="ClientApp\src\app\Project\project-routing.module.ts" />
     <None Remove="ClientApp\src\app\Project\project.component.ts" />
@@ -31,6 +34,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\home\homechild.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\home\home-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\home\home.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Project\new-project\new-project.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Project\project-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Project\project.component.ts" />
